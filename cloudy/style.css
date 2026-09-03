@@ -1,0 +1,439 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;   
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+:root{
+    --bg-main:#ffffff;
+    --primary-blue:#0284c7;
+    --text-dark:#0f172a;
+    --text-muted:#64748b;
+    --border-suble:#2b2626;
+}
+body{
+    font-family: sans-serif;
+    background-color: var(--bg-main);
+    color:var(--text-dark);
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    border-bottom: 2px solid var(--border-suble);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 1. Logo Styling */
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo span{
+    color:var(--primary-blue);
+}
+
+/* 2. Middle Links */
+.nav-links{
+    display: flex;
+    gap:24px;
+}
+.nav-links a{
+    color:var(--text-muted);
+    font-size: 15px;
+    transition: color 0.2s ease;
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -ms-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+}
+.nav-links a:hover{
+    color:var(--primary-blue);
+}
+
+/* 3. Right Side Button */
+.btn-nav{
+    background-color: var(--primary-blue);
+    color:#ffffff;
+    padding:8px 18px;
+    border-radius:6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+    -webkit-transition: opacity 0.2s ease;
+    -moz-transition: opacity 0.2s ease;
+    -ms-transition: opacity 0.2s ease;
+    -o-transition: opacity 0.2s ease;
+}
+.btn-nav:hover{
+    opacity:0.9;
+}
+
+/* Hero Section Styling */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f8fafc; /* Very light grey background contrast ke liye */
+  border-bottom: 1px solid var(--border-suble);
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto; /* Left aur right se automatically barabar center karega */
+}
+
+.hero h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* Hero Buttons Wrapper */
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: var(--text-dark);
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: 1px solid var(--border-suble);
+  transition: border-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--text-dark);
+}
+
+/* Services Section Styling */
+.services {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.section-title p {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+/* CSS Grid Parent */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Individual Card */
+.card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-suble);
+  border-radius: 8px;
+  padding: 32px 24px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-blue);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Card Icons */
+.card-icon {
+  font-size: 28px;
+  color: var(--primary-blue);
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+/* Pricing Section Styling */
+.pricing {
+  padding: 80px 20px;
+  background-color: #f8fafc;
+  border-top: 1px solid var(--border-suble);
+  border-bottom: 1px solid var(--border-suble);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.price-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-suble);
+  border-radius: 8px;
+  padding: 40px 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Smooth Scrolling poore page ke liye */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Features Section */
+.features-section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.feature-item {
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-suble);
+  border-radius: 8px;
+}
+
+/* Chhota Accent Indicator Dot */
+.feature-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.feature-item h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.feature-item p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Highlighted Popular Plan */
+.price-card.popular {
+  border: 2px solid var(--primary-blue);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 32px;
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.price-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.price span {
+  font-size: 16px;
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+/* Features List */
+.features {
+  list-style: none;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.features li {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+/* Card Button Full Width */
+.price-card a {
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Newsletter / Contact Section */
+.newsletter {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.newsletter-box {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.newsletter h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.newsletter p {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+/* Form Flexbox Setup */
+.subscribe-form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid var(--border-suble);
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.subscribe-form input:focus {
+  border-color: var(--primary-blue);
+}
+
+.subscribe-form button {
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Footer */
+.footer {
+  padding: 24px 20px;
+  text-align: center;
+  border-top: 1px solid var(--border-suble);
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* =========================================
+   Mobile & Tablet Responsiveness (768px)
+   ========================================= */
+@media (max-width: 768px) {
+  /* 1. Navbar ko vertical stack ya wrap karna */
+  .navbar {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  /* 2. Hero Section text chhota aur buttons vertical */
+  .hero {
+    padding: 60px 16px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary, .btn-secondary {
+    display: block;
+    text-align: center;
+  }
+
+  /* 3. Services, Features & Pricing Grids ko 1 column banana */
+  .services-grid,
+  .features-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr; /* Ab sab 1-1 line mein vertically aayenge */
+  }
+
+  /* 4. Newsletter form ko full-width mobile friendly karna */
+  .subscribe-form {
+    flex-direction: column;
+  }
+}
