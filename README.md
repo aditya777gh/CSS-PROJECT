@@ -4,7 +4,7 @@ A modern, responsive landing page for a fictional cloud hosting service called *
 
 🚀 Live Demos
 - **Netlify Live URL:** https://cloudy-css.netlify.app/
-- **GitHub Pages URL:** https://aditya77gh.github.io/CSS-PROJECT/cloudy/
+- **GitHub Pages URL:** https://aditya777gh.github.io/CSS-PROJECT/cloudy/
 - **Source Code:** [GitHub Repository Folder](https://github.com/<your-github-username>/CSS-PROJECT/tree/main/cloudy)
 
 ---
