@@ -1,0 +1,114 @@
+# CSS PART-1
+#Stater File
+1. basic(folder)
+        i. index.html
+        ii. style.css
+2. colors(folder)
+        i. index.html
+        ii. color-style.css
+3. background(folder)
+        i.index.html
+        ii.bg-style.css
+        iii. project.html
+4. units(folder)
+        i. index.html
+        ii. style.css
+5. font(folder)
+        i. index.html
+        ii. style.css
+6. text(folder)
+        i. index.html
+        ii. style.css
+7. box-model(folder)
+        i. borders(folder)
+        ii.padding(folder)
+        iii. margin(folder)
+        iv. index.html , style.css
+8. gradient(folder)
+        i. linear-style.css
+        ii. radial-style.css
+9. shadow(folder)
+        i. box-shadow
+        ii. drop-shadow
+10. filters(folder)
+        i. index.html
+        ii. style.css
+11. lists(folder)
+        i. index.html
+        ii. style.css
+12. anchor(folder)
+        i. index.html
+        ii. style.css
+13. combinators(folder)
+        i. index.html
+        ii. style.css
+14. display(folder)
+        i. index.html
+        ii. style.css
+15. positions(folder)
+        i. positionabsolute(folder)
+        ii. fixed.html
+        iii. static.html
+16. zindex(folder)
+17. overflow(folder)
+        i. index.html
+        ii. style.css
+18.pseudo-elements(folder)
+        i. index.html
+        ii. style.css
+19. pseudo-class(folder)
+        i. index.html
+        ii. style.css
+20. columnlayout(folder)
+        i. index.html
+        ii. style.css
+21. flexbox(folder)
+        i. index.html
+        ii. style.css
+22. grid(folder)
+        i. index.html
+        ii. style.css
+23. advance-css(folder)
+        i. transition(folder)
+        ii. transform(folder)
+        iii. animation(folder)
+        iv. perspective.html
+        V. project.html
+24. cssvariables(folder)
+        i. index.html
+        ii. style.css
+25. specificity(folder)
+        i. index.html
+        ii. style.css
+26. latestcss(folder)
+        i. remaining(folder)
+        ii. pseudoclass(folder)
+        iii. containerqueries(folder)
+27. bonus(folder)
+        i. float
+        ii. clippath
+
+# CSS PART-2
+#Stater File
+28. project(folder)
+        i. centerdiv(folder)
+        ii. carousal(folder)
+        iii. newton-cradel(folder)
+        iv. neonloader(folder)
+        v. rain(folder)
+        vi. buttonshake(folder)
+        vii. textfloat(folder)
+        viii. textreveal(folder)
+        
+29. advancedcss(folder)
+        i. project.html(lunal eclipse)
+
+30. final_project(folder)
+        i. index.html
+        ii. about.html
+        iii. services.html
+        iv. blog.html
+        v. contact.html
+        vi. css(style.css)
+        vii. js(index.js)
+        
